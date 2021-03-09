@@ -27,3 +27,13 @@ function bottomWallTest(o) {
         Snowflakes[o].x += snowflakex;
     }
 }
+
+document.addEventListener("keydown", keydownHandler);
+
+function keydownHandler(event) {
+    if (event.keyCode === 39) { // Right arrow
+        Snowflakes.push(newSnowflake(randomInt(0, cnv.width), randomInt(0, cnv.height), randomDec(3, 7), "white", randomDec(0.5, 3.0), randomDec(0.5, 3.0)));
+    } else if (event.keyCode === 37) { // Left arrow
+        Snowflakes.pop();
+    }
+}

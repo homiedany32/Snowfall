@@ -4,8 +4,8 @@
 // Main
 let cnv = document.getElementById("my-canvas");
 let ctx = cnv.getContext("2d");
-cnv.width = 1200;
-cnv.height = 1000;
+cnv.width = 1000;
+cnv.height = 800;
 
 /* Function List:
     modes:
